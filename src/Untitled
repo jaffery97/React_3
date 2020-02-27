@@ -1,0 +1,21 @@
+First name:<br>
+<br>
+<input type="text" name="firstname" placeholder="PlayerOne name" id='firstname'>
+<br><br>
+<input type="text" name="firstname" placeholder="PlayerTwo name" id='lastname'>
+
+<input type="button" value="Add" onclick="myFunction()">
+
+<br><br>
+<div id="here" style="float:right;"></div>
+<div id="here2" style="float:left;"></div>
+<body>
+
+<script>
+myFunction = function() {
+    var first = document.getElementById("firstname").value;
+  var second = document.getElementById("lastname").value;
+
+    document.getElementById("here").innerHTML = first;
+    document.getElementById("here2").innerHTML = second;
+}
