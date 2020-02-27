@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PlayerCard from "./PlayerCard.js";
 
+
 class Game extends Component {
 constructor(){
   super();
@@ -42,15 +43,19 @@ decideWinner = () => {
   render() {
     return (
 <div className="style">
-<div>
-<PlayerCard sign={this.state.playerOne} />
-<PlayerCard sign={this.state.playerTwo} />
-</div>
+<h1 className="title">Rock paper scissors</h1>
+     <div className="style">
+       <div className="main">
 
-<div className="winner">
-{this.decideWinner()}
-</div>
-<button type="button" onClick={this.playGame}>Play the game :)</button>
+        <div id="here"></div>
+         <PlayerCard name="Player One" sign={this.state.playerOne}/>
+         <hr/>
+         <PlayerCard name="Player Two" sign={this.state.playerTwo}/>
+
+       </div>
+       <div className="winner">{this.decideWinner()}</div>
+       <button type="button" onClick={this.playGame}>Play the Game</button>
+     </div>
 </div>
 
 )
