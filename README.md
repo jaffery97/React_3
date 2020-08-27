@@ -1,4 +1,4 @@
-This project live demo at https://github.com/jaffery97/React_3
+##This project live demo at https://jaffery97.github.io/React_3/
 
 ###Languages
 
